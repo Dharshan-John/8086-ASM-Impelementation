@@ -14,7 +14,7 @@ START:
     mov ax, 1000H
 
     add ax, [bx]
-    jmp skip
+    jnc skip
     inc cl
 skip:
     mov res, ax
